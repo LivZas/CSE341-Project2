@@ -1,0 +1,148 @@
+### Store testing:
+
+### GET all store (LOCAL)
+
+GET http://localhost:3000/store
+
+### GET all stores (RENDER)
+
+GET https://project1-bu18.onrender.com/store
+
+### GET store by Id (LOCAL)
+
+GET http://localhost:3000/store/6a072c62c289b09dd3d070eb
+
+### GET store by Id (RENDER)
+
+GET https://project1-bu18.onrender.com/store/6a072c62c289b09dd3d070eb
+
+### Create a new store (LOCAL)
+
+POST http://localhost:3000/store HTTP/1.1
+content-type: application/json
+
+  {
+    "storeName": "Big Electronics",
+    "location": "New York, US",
+    "owner": "Raphael Jones",
+    "employees": 10
+  }
+
+### Create a new store (RENDER)
+
+POST https://project1-bu18.onrender.com/store HTTP/1.1
+content-type: application/json
+
+  {
+    "storeName": "Big Electronics",
+    "location": "New York, US",
+    "owner": "Raphael Jones",
+    "employees": 10
+  }
+
+### PUT store (LOCAL)
+
+PUT http://localhost:3000/store/6a0b61bef240a068f856daba HTTP/1.1
+content-type: application/json
+
+  {
+    "storeName": "Big Electronics",
+    "location": "New York, US",
+    "owner": "Test Jones",
+    "employees": 10
+  }
+
+### PUT store (RENDER)
+
+PUT https://project1-bu18.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
+content-type: application/json
+
+  {
+    "storeName": "Big Electronics",
+    "location": "New York, US",
+    "owner": "Test Jones",
+    "employees": 10
+  }
+
+### DELETE store (LOCAL)
+
+DELETE http://localhost:3000/store/6a0ddd9d0b4cee99083bd6ba HTTP/1.1
+
+### DELETE store (RENDER)
+
+DELETE https://project1-bu18.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
+
+
+### Inventory testing:
+
+### GET all inventory (LOCAL)
+
+GET http://localhost:3000/inventory
+
+### GET all inventory (RENDER)
+
+GET https://project1-bu18.onrender.com/inventory
+
+### GET inventory by Id (LOCAL)
+
+GET http://localhost:3000/inventory/6a072c62c289b09dd3d070eb
+
+### GET inventory by Id (RENDER)
+
+GET https://project1-bu18.onrender.com/inventory/6a072c62c289b09dd3d070eb
+
+### Create a new inventory (LOCAL)
+
+POST http://localhost:3000/inventory HTTP/1.1
+content-type: application/json
+
+  {
+    "itemName": "PlayStation 5",
+    "category": "Electronics",
+    "price": 600,
+    "quantity": 10
+  }
+
+### Create a new inventory (RENDER)
+
+POST https://project1-bu18.onrender.com/inventory HTTP/1.1
+content-type: application/json
+
+  {
+    "itemName": "PlayStation 5",
+    "category": "Electronics",
+    "price": 600,
+    "quantity": 10
+  }
+
+### PUT inventory (LOCAL)
+
+PUT http://localhost:3000/inventory/6a0b61bef240a068f856daba HTTP/1.1
+content-type: application/json
+
+  {
+    "itemName": "PlayStation 5",
+    "category": "Electronics",
+    "price": 700,
+    "quantity": 10
+  }
+
+### PUT inventory (RENDER)
+
+PUT https://project1-bu18.onrender.com/inventory/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
+content-type: application/json
+
+  {
+    "itemName": "PlayStation 5",
+    "category": "Electronics",
+    "price": 700,
+    "quantity": 10
+  }
+
+### DELETE inventory (LOCAL)
+
+DELETE http://localhost:3000/inventory/6a0ddd9d0b4cee99083bd6ba HTTP/1.1
+
+### DELETE inventory (RENDER)
+
+DELETE https://project1-bu18.onrender.com/inventory/6a0dea71acb5a7a3a7e764
