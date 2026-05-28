@@ -6,7 +6,7 @@ GET http://localhost:3000/store
 
 ### GET all stores (RENDER)
 
-GET https://project1-bu18.onrender.com/store
+GET https://cse341-project2-fu2d.onrender.com/store
 
 ### GET store by Id (LOCAL)
 
@@ -14,7 +14,7 @@ GET http://localhost:3000/store/6a072c62c289b09dd3d070eb
 
 ### GET store by Id (RENDER)
 
-GET https://project1-bu18.onrender.com/store/6a072c62c289b09dd3d070eb
+GET https://cse341-project2-fu2d.onrender.com/store/6a072c62c289b09dd3d070eb
 
 ### Create a new store (LOCAL)
 
@@ -30,7 +30,7 @@ content-type: application/json
 
 ### Create a new store (RENDER)
 
-POST https://project1-bu18.onrender.com/store HTTP/1.1
+POST https://cse341-project2-fu2d.onrender.com/store HTTP/1.1
 content-type: application/json
 
   {
@@ -54,7 +54,7 @@ content-type: application/json
 
 ### PUT store (RENDER)
 
-PUT https://project1-bu18.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
+PUT https://cse341-project2-fu2d.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
 content-type: application/json
 
   {
@@ -70,7 +70,7 @@ DELETE http://localhost:3000/store/6a0ddd9d0b4cee99083bd6ba HTTP/1.1
 
 ### DELETE store (RENDER)
 
-DELETE https://project1-bu18.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
+DELETE https://cse341-project2-fu2d.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
 
 
 ### Inventory testing:
@@ -81,7 +81,7 @@ GET http://localhost:3000/inventory
 
 ### GET all inventory (RENDER)
 
-GET https://project1-bu18.onrender.com/inventory
+GET https://cse341-project2-fu2d.onrender.com/inventory
 
 ### GET inventory by Id (LOCAL)
 
@@ -89,7 +89,7 @@ GET http://localhost:3000/inventory/6a072c62c289b09dd3d070eb
 
 ### GET inventory by Id (RENDER)
 
-GET https://project1-bu18.onrender.com/inventory/6a072c62c289b09dd3d070eb
+GET https://cse341-project2-fu2d.onrender.com/inventory/6a072c62c289b09dd3d070eb
 
 ### Create a new inventory (LOCAL)
 
@@ -105,7 +105,7 @@ content-type: application/json
 
 ### Create a new inventory (RENDER)
 
-POST https://project1-bu18.onrender.com/inventory HTTP/1.1
+POST https://cse341-project2-fu2d.onrender.com/inventory HTTP/1.1
 content-type: application/json
 
   {
@@ -129,7 +129,7 @@ content-type: application/json
 
 ### PUT inventory (RENDER)
 
-PUT https://project1-bu18.onrender.com/inventory/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
+PUT https://cse341-project2-fu2d.onrender.com/inventory/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
 content-type: application/json
 
   {
@@ -145,4 +145,4 @@ DELETE http://localhost:3000/inventory/6a0ddd9d0b4cee99083bd6ba HTTP/1.1
 
 ### DELETE inventory (RENDER)
 
-DELETE https://project1-bu18.onrender.com/inventory/6a0dea71acb5a7a3a7e764
+DELETE https://cse341-project2-fu2d.onrender.com/inventory/6a0dea71acb5a7a3a7e764
