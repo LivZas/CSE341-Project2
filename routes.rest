@@ -73,6 +73,11 @@ DELETE http://localhost:3000/store/6a0ddd9d0b4cee99083bd6ba HTTP/1.1
 DELETE https://cse341-project2-fu2d.onrender.com/store/6a0dea71acb5a7a3a7e764c6 HTTP/1.1
 
 
+
+
+
+
+
 ### Inventory testing:
 
 ### GET all inventory (LOCAL)
@@ -100,7 +105,10 @@ content-type: application/json
     "itemName": "PlayStation 5",
     "category": "Electronics",
     "price": 600,
-    "quantity": 10
+    "quantity": 10,
+    "color": "White",
+    "company": "Sony",
+    "stores": ["Big Electronics", "River Computer Shop"]
   }
 
 ### Create a new inventory (RENDER)
@@ -112,7 +120,10 @@ content-type: application/json
     "itemName": "PlayStation 5",
     "category": "Electronics",
     "price": 600,
-    "quantity": 10
+    "quantity": 10,
+    "color": "White",
+    "company": "Sony",
+    "stores": ["Big Electronics", "River Computer Shop"]
   }
 
 ### PUT inventory (LOCAL)
@@ -121,10 +132,13 @@ PUT http://localhost:3000/inventory/6a0b61bef240a068f856daba HTTP/1.1
 content-type: application/json
 
   {
-    "itemName": "PlayStation 5",
+    "itemName": "PlayStation 5 Pro",
     "category": "Electronics",
-    "price": 700,
-    "quantity": 10
+    "price": 750,
+    "quantity": 10,
+    "color": "White",
+    "company": "Sony",
+    "stores": ["Big Electronics", "River Computer Shop"]
   }
 
 ### PUT inventory (RENDER)
@@ -133,10 +147,13 @@ PUT https://cse341-project2-fu2d.onrender.com/inventory/6a0dea71acb5a7a3a7e764c6
 content-type: application/json
 
   {
-    "itemName": "PlayStation 5",
+    "itemName": "PlayStation 5 Pro",
     "category": "Electronics",
-    "price": 700,
-    "quantity": 10
+    "price": 750,
+    "quantity": 10,
+    "color": "White",
+    "company": "Sony",
+    "stores": ["Big Electronics", "River Computer Shop"]
   }
 
 ### DELETE inventory (LOCAL)

@@ -44,7 +44,10 @@ const createInventory = async (req, res) => {
         itemName: req.body.itemName,
         category: req.body.category,
         price: req.body.price,
-        quantity: req.body.quantity
+        quantity: req.body.quantity,
+        color: req.body.color,
+        company: req.body.company,
+        stores: req.body.stores
         };
 
     const response = await mongodb.getDatabase().db().collection('inventory').insertOne(inventory);
@@ -67,10 +70,13 @@ const updateInventory = async (req, res) => {
         const inventoryId = new ObjectId(req.params.id);
 
         const inventory = {
-            itemName: req.body.itemName,
-            category: req.body.category,
-            price: req.body.price,
-           quantity: req.body.quantity
+        itemName: req.body.itemName,
+        category: req.body.category,
+        price: req.body.price,
+        quantity: req.body.quantity,
+        color: req.body.color,
+        company: req.body.company,
+        stores: req.body.stores
         };
 
         const response = await mongodb.getDatabase().db().collection('inventory').replaceOne({ _id: inventoryId }, inventory);
