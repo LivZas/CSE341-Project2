@@ -224,7 +224,7 @@
                   "example": "any"
                 },
                 "stores": {
-                  "example": ["any"]
+                  "example": "any"
                 }
               }
             }
@@ -306,7 +306,7 @@
                   "example": "any"
                 },
                 "stores": {
-                  "example": ["any"]
+                  "example": "any"
                 }
               }
             }

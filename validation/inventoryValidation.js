@@ -27,8 +27,8 @@ const inventoryValidationRules = () => {
         .withMessage('Company is required'),
 
         body('stores')
-        .isArray({ min: 1 })
-        .withMessage('At least one store is required')
+        .notEmpty()
+        .withMessage('Store is required')
     ];
 };
 
