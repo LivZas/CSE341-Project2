@@ -216,6 +216,15 @@
                 },
                 "quantity": {
                   "example": "any"
+                },
+                "color": {
+                  "example": "any"
+                },
+                "company": {
+                  "example": "any"
+                },
+                "stores": {
+                  "example": "any"
                 }
               }
             }
@@ -288,6 +297,15 @@
                   "example": "any"
                 },
                 "quantity": {
+                  "example": "any"
+                },
+                "color": {
+                  "example": "any"
+                },
+                "company": {
+                  "example": "any"
+                },
+                "stores": {
                   "example": "any"
                 }
               }
