@@ -12,7 +12,12 @@ const storeValidationRules = () => {
 
         body('owner')
         .notEmpty()
-        .withMessage('Employees must be a number')
+        .withMessage('Owner name is required'),
+
+        body('employees')
+        .notEmpty()
+        .withMessage('Employees must be a number'),
+
     ];
 };
 
