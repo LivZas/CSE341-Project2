@@ -16,7 +16,19 @@ const inventoryValidationRules = () => {
 
         body('quantity')
         .isInt({ min: 0 })
-        .withMessage('Quantity must be an integer')
+        .withMessage('Quantity must be an integer'),
+
+        body('color')
+        .notEmpty()
+        .withMessage('Color is required'),
+
+        body('company')
+        .notEmpty()
+        .withMessage('Company is required'),
+
+        body('stores')
+        .isArray({ min: 1 })
+        .withMessage('At least one store is required')
     ];
 };
 
