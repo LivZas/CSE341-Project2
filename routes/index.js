@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const passport = require('passport');
 
-router.use('/', require('./swagger'));
+router.use('/api-docs', require('./swagger'));
 
 router.use('/store', require('./store'));
 router.use('/inventory', require('./inventory'));
